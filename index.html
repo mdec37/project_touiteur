@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Description de ma page">
+
+    <title>Project touiteur</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+<body>
+    <div class="touiteur-container">
+        <header class="flex">
+            <img src="assets/img/plume_logo.png" class="logo" alt="Logo" title='Logo Plume©'>
+            <div class="title">
+                <h1>Touiteur</h1>
+                <p>Touiteur est un micro réseau social ou chacun est libre de partager un message avec d'autres utilisateurs.</p>
+            </div>
+        </header>
+        
+        <main class="flex">
+            <section class="center-area">
+                <div class="form-send flex">
+                    <form id="form">
+                        <div class="form-name">
+                            <!-- <label for="pseudo">Votre pseudo</label> -->
+                            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required>
+                        </div>
+                        <div class="form-message">
+                            <!-- <label for="message">Votre message</label> -->
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-button flex">
+                            <input type="submit" value="Envoyer" id="ajouter">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="touit">
+                    <div class="error">
+                    </div>
+
+                    <div class="touit-cards">
+                        <div class="cards-content">
+                            <div class="touit-pseudo">Pseudo TEST</div>
+                            <button class="btnOpen">
+                                <p class="content">
+                                    Touit de TEST - Lorem ipsum dolor.
+                                </p>
+                            </button>
+                            <footer class="flex">
+                                <div class="touit-like flex">
+                                    <p>20</p> 
+                                    <button>
+                                        <img src="assets/img/heart.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="touit-comment flex">
+                                    <p>3</p> 
+                                    <button> 
+                                        <img src="assets/img/bulle-de-chat.svg" alt="">
+                                    </button>
+                                </div>
+                            </footer>
+                        </div>
+                        <p class="touit-date">20/12/2020</p>
+                    </div>
+                    <div class="touit-cards">
+                        <div class="cards-content">
+                            <div class="touit-pseudo">Pseudo TEST</div>
+                            <button class="btnOpen">
+                                <p class="content">
+                                    Touit de TEST - Lorem ipsum dolor.Lorem ipsum dolor sit,itaque ipsEligendi accusamus facere libero nihil pos.simus omnis
+                                    doloremolo lorem dolorem.Lorem ipsum dolor sit,itaque ipsEligendi accusamus facere libero nihil pos.simus omnis
+                                    doloremolo lorem dolorem.
+                                </p>
+                            </button>
+                            <footer class="flex">
+                                <div class="touit-like flex">
+                                    <p>140</p> 
+                                    <button>
+                                        <img src="assets/img/heart.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="touit-comment flex">
+                                    <p>18</p> 
+                                    <button> 
+                                        <img src="assets/img/bulle-de-chat.svg" alt="">
+                                    </button>
+                                </div>
+                            </footer>
+                        </div>
+                        <p class="touit-date">20/12/2020</p>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section class="sidebar">
+                <div class="search flex">
+                    <input type="search" id="site-search" placeholder="Ne pas rechercher..." name="site-search"
+                        aria-label="Search through site content">
+                    <button>
+                        <img src="assets/img/loupe.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="trending">
+                    <h2>Trending</h2>
+                    <ul class="flex">
+                        <li>Lorem</li>
+                        <li>Quaerat</li>
+                        <li>Nam</li>
+                        <li>Rerum</li>
+                        <li>Earum</li>
+                        <li>Accusantium</li>
+                        <li>Dicta</li>
+                    </ul>
+                </div>
+
+                <div class="best-touit">
+                    <h2>Best touit</h2>
+                    <div class="top-touit">
+                        <div class="touit-cards">
+                            <!-- <div class="cards-content">
+                                <div class="touit-pseudo">Mon pseudo</div>
+                                <button class="btnOpen">
+                                    <p class="content">
+                                        Lorem ipsum dolor sit,itaque ipsEligendi accusamus.
+                                    </p>
+                                </button>
+                                <footer class="flex">
+                                    <div class="touit-like flex">
+                                        <p>20</p> 
+                                        <button>
+                                            <img src="assets/img/heart.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="touit-comment flex">
+                                        <p>3</p> 
+                                        <button> 
+                                            <img src="assets/img/bulle-de-chat.svg" alt="">
+                                        </button>
+                                    </div>
+                                </footer>
+                            </div>
+                            <p class="touit-date">20/12/2020</p>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    
+    <script src="assets/js/bundle.min.js"></script>
+</body>
+</html>
